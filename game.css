@@ -1,0 +1,144 @@
+body {
+    background-image: url(pixel.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100%;
+    font-family: "Press Start 2P";
+}
+
+/* top title */
+h1 {
+    padding: 20px;
+    color: white;
+    -webkit-text-stroke: 0.5px pink;
+}
+h2 {
+    padding: 20px;
+    color: white;
+    -webkit-text-stroke: 0.5px pink;
+}
+/* tic tac toe grid */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#game {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 130px 130px 130px;
+    grid-template-rows: 130px 130px 130px;
+    background-color: black;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.box {
+    color:white;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-border {
+    border-right: 0.1em solid white;
+}
+.bottom-border {
+    border-bottom: 0.1em solid white;
+}
+
+/* bottom scores */
+ul.scores {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+ul.scorecount {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+section {
+    color: white;
+    align-self: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    min-width: 500px;
+}
+.p1 {
+    color: white;
+    -webkit-text-stroke: 0.5px pink;
+}
+.p2 {
+    color: white;
+    -webkit-text-stroke: 0.5px greenyellow;
+}
+
+/* restart button */
+.restart {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+button {
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container{
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+body2 {
+    font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    width: 500px;
+    height: 3px;
+    background-color: black;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 147px;
+    height: 147px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.horizontal-line {
+    border-bottom: 3px solid white;
+}
+
+.vertical-line {
+    border-right: 3px solid white;
+}
+
+.winner {
+    background-color: lightgray;
+    color: red;
+}
